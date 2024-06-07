@@ -5,6 +5,6 @@ export const AppRoutes = {
 };
 
 export const AuthRoutes = {
-  LOGIN: 'Login',
+  SIGNIN: 'Signin',
   SIGNUP: 'Signup',
 };

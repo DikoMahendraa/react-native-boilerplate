@@ -1,16 +1,16 @@
-// MainNavigator.tsx
 import React from 'react';
 import {createStackNavigator} from '@react-navigation/stack';
 import HomeScreen from '../screens/HomeScreen';
 import ProfileScreen from '../screens/ProfileScreen';
+import {AppRoutes} from './routes';
 
 const Stack = createStackNavigator();
 
 const MainNavigator = () => {
   return (
-    <Stack.Navigator>
-      <Stack.Screen name="Home" component={HomeScreen} />
-      <Stack.Screen name="Profile" component={ProfileScreen} />
+    <Stack.Navigator initialRouteName={AppRoutes.HOME}>
+      <Stack.Screen name={AppRoutes.HOME} component={HomeScreen} />
+      <Stack.Screen name={AppRoutes.PROFILE} component={ProfileScreen} />
     </Stack.Navigator>
   );
 };
