@@ -59,6 +59,14 @@ Install dependencies
   npm install
 ```
 
+```bash
+  cd ios && pod install
+```
+
+```bash
+  cd ...
+```
+
 Start the server
 
 ```bash
