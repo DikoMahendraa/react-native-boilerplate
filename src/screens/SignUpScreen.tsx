@@ -1,10 +1,11 @@
 import React, {useState} from 'react';
-import {View, Text, TextInput, StyleSheet} from 'react-native';
+import {View, Text, StyleSheet} from 'react-native';
 import CustomButton from '../components/atoms/Button';
-import {LogIn} from 'lucide-react-native';
+import {LogIn, LogOut} from 'lucide-react-native';
+import Input from '../components/atoms/Input';
 
 const SignUpScreen = () => {
-  const [email, setEmail] = useState('');
+  const [email] = useState('');
   const [password, setPassword] = useState('');
 
   const handleRegister = () => {
@@ -14,20 +15,23 @@ const SignUpScreen = () => {
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Register</Text>
-      <TextInput
-        style={styles.input}
-        placeholder="Email"
-        onChangeText={setEmail}
-        value={email}
-        keyboardType="email-address"
-        autoCapitalize="none"
-      />
-      <TextInput
-        style={styles.input}
+      <Input
         placeholder="Password"
-        onChangeText={setPassword}
         value={password}
+        onChangeText={setPassword}
         secureTextEntry
+        error=""
+        prefix={<LogIn />}
+        suffix={<LogOut />}
+      />
+      <Input
+        placeholder="Password"
+        value={password}
+        onChangeText={setPassword}
+        secureTextEntry
+        error=""
+        prefix={<LogIn />}
+        suffix={<LogOut />}
       />
       <CustomButton
         text="Sign In"
@@ -50,15 +54,6 @@ const styles = StyleSheet.create({
     fontSize: 24,
     fontWeight: 'bold',
     marginBottom: 20,
-  },
-  input: {
-    width: '100%',
-    height: 50,
-    borderWidth: 1,
-    borderColor: '#ccc',
-    borderRadius: 5,
-    paddingHorizontal: 10,
-    marginBottom: 10,
   },
 });
 

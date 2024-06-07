@@ -1,6 +1,6 @@
 import React from 'react';
 import {View, Text, StyleSheet, Button} from 'react-native';
-import {navigate} from '../navigation/NavigationService';
+import {navigate} from '../navigation';
 
 const HomeScreen = () => {
   const goToProfile = () => navigate('Profile');
