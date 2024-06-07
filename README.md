@@ -27,3 +27,5 @@ source
 ---- https://lucide.dev/guide/packages/lucide-react-native
 ---- https://reactnavigation.org/docs/getting-started
 ---- https://typicode.github.io/husky/get-started.html
+---- https://callstack.github.io/react-native-testing-library/docs/start/quick-start
+---- https://github.com/testing-library/eslint-plugin-testing-library
