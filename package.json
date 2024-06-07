@@ -56,5 +56,5 @@
   "engines": {
     "node": ">=18"
   },
-  "packageManager": "yarn@3.6.4"
+  "packageManager": "npm@21.1.0"
 }

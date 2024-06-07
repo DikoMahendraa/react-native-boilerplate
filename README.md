@@ -1,31 +1,78 @@
-# React Native Project Design Patterns
+## React Native Boilerplate
 
-This repository demonstrates the use of various design patterns and best practices in React Native development. These patterns aim to improve code organization, maintainability, and scalability of the project.
+An easy way to start your first project using React Native, with customizability, readability, and ease of maintenance in mind.
 
-## Table of Contents
+## Folder Structure
 
-- [Atomic Design](#atomic-design)
-- [Redux Toolkit for State Management](#redux-toolkit-for-state-management)
-- [Context API and Hooks](#context-api-and-hooks)
-- [Component-Driven Development](#component-driven-development)
-- [Module-Based Architecture](#module-based-architecture)
-- [TypeScript for Type Safety](#typescript-for-type-safety)
-- [Performance Optimization](#performance-optimization)
-- [Error Handling and Logging](#error-handling-and-logging)
-- [Testing](#testing)
-- [Continuous Integration/Continuous Deployment (CI/CD)](#continuous-integrationcontinuous-deployment-cicd)
+### **Atomic Design Pattern**
 
-## Atomic Design
+````
+src
+├── @types => globals types
+├── assets => all routes pages
+├── components => all routes pages
+├──────────── atoms => unit components
+├──────────── molecules => combination from some atoms
+├──────────── organisms => combination from some molecules
+├── constants => static variables
+├── hooks => custom hooks function
+├── layouts => component as a wrapper screen
+├── navigation => set all routes pages navigation
+├── services => integration with BE service using REST API/GraphQL
+├── stores => set state management for zustand/jotai/redux
+├── utils => helper functional
 
-This project follows the Atomic Design methodology, which organizes UI components into five distinct levels of complexity: Atoms, Molecules, Organisms, Templates, and Pages. This approach promotes reusability and scalability by breaking down UI components into smaller, more manageable pieces.
+## Authors
 
-source
----- https://www.npmjs.com/package/react-native-svg
----- https://github.com/pmndrs/zustand/tree/main/docs
----- https://tanstack.com/query/v5/docs/framework/react/installation
----- https://github.com/axios/axios
----- https://lucide.dev/guide/packages/lucide-react-native
----- https://reactnavigation.org/docs/getting-started
----- https://typicode.github.io/husky/get-started.html
----- https://callstack.github.io/react-native-testing-library/docs/start/quick-start
----- https://github.com/testing-library/eslint-plugin-testing-library
+- [@diko.dev99](https://www.github.com/dikomahendraa)
+
+
+## Tech setup
+
+[React Native SVG](https://www.npmjs.com/package/react-native-svg)
+[Zustand](https://github.com/pmndrs/zustand/tree/main/docs)
+[Tanstack](https://tanstack.com/query/v5/docs/framework/react/installation)
+[Axios](https://github.com/axios/axios)
+[Lucide Icon](https://lucide.dev/guide/packages/lucide-react-native)
+[React Navigation](https://reactnavigation.org/docs/getting-started)
+[Husky pre commit](https://typicode.github.io/husky/get-started.html)
+[React Native Testing Library](https://callstack.github.io/react-native-testing-library/docs/start/quick-start)
+[Eslint Plugin RTL](https://github.com/testing-library/eslint-plugin-testing-library)
+
+## Run Locally
+
+Clone the project react-native-boilerplate
+
+```bash
+  git clone https://github.com/DikoMahendraa/react-native-boilerplate.git
+````
+
+Go to the project directory
+
+```bash
+  cd seact-native-boilerplate
+```
+
+Install dependencies
+
+```bash
+  npm install
+```
+
+Start the server
+
+```bash
+  npm run start
+```
+
+Run on emulator ios
+
+```bash
+  npm run ios
+```
+
+Run on emulator android
+
+```bash
+  npm run android
+```
