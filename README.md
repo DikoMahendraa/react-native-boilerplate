@@ -6,7 +6,7 @@ An easy way to start your first project using React Native, with customizability
 
 ### **Atomic Design Pattern**
 
-````
+```
 src
 ├── @types => globals types
 ├── assets => all routes pages
@@ -21,11 +21,11 @@ src
 ├── services => integration with BE service using REST API/GraphQL
 ├── stores => set state management for zustand/jotai/redux
 ├── utils => helper functional
+```
 
 ## Authors
 
 - [@diko.dev99](https://www.github.com/dikomahendraa)
-
 
 ## Tech setup
 
@@ -45,7 +45,7 @@ Clone the project react-native-boilerplate
 
 ```bash
   git clone https://github.com/DikoMahendraa/react-native-boilerplate.git
-````
+```
 
 Go to the project directory
 
