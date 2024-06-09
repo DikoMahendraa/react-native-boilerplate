@@ -35,9 +35,13 @@ src
 [Axios](https://github.com/axios/axios)
 [Lucide Icon](https://lucide.dev/guide/packages/lucide-react-native)
 [React Navigation](https://reactnavigation.org/docs/getting-started)
+[Zod](https://zod.dev/?id=installation)
+[React Hooks Form](https://react-hook-form.com/get-started#ReactNative)
+[Schema Validation - Resolver](https://react-hook-form.com/get-started#SchemaValidation)
 [Husky pre commit](https://typicode.github.io/husky/get-started.html)
 [React Native Testing Library](https://callstack.github.io/react-native-testing-library/docs/start/quick-start)
 [Eslint Plugin RTL](https://github.com/testing-library/eslint-plugin-testing-library)
+[Local Storage - MMKV](https://github.com/mrousavy/react-native-mmkv)
 
 ## Run Locally
 
@@ -58,6 +62,8 @@ Install dependencies
 ```bash
   npm install
 ```
+
+Install on ios env
 
 ```bash
   cd ios && pod install

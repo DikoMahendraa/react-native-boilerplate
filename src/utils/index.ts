@@ -1,3 +1,3 @@
-// import entire file utils
+import {storage} from './storage';
 
-// export as named
+export {storage};
